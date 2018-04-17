@@ -1,24 +1,37 @@
 <!DOCTYPE HTML>
 <html>
+	<div>
+	 <form action="http://localhost:8888/Bookstore/load_sample_data.php" method="post">
+			<div style="text-align:right">
+                    <input id="LoadSample" style="opacity: 0.8" type="submit" value="Load Sample Data" />
+                    <br><br>
+   		    </div>
+
+    </form>
     <head>
-        
-        <title>PHP practice</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <title>Bookstore</title>
+		 
     </head>
     
-    <body>
-        <form action="http://localhost:8888/librarydatabase/update.php" method="post">
-        <h1 style="text-align:center">Library</h1>
 
+    <body>
+	
+
+        <form action="http://localhost:8888/Bookstore/update.php" method="post">
+			
+        <h1 style="text-align:center">Bookstore</h1>     
+        
+    
         <div style="text-align:center" id="main">
             
                 <br><br>
-                <a href="http://localhost:8888/librarydatabase/newcustomer.html">Add New Customer</a><br>
-                <a href="http://localhost:8888/librarydatabase/showcustomers.php">Show Customers</a><br>
-                <a href="http://localhost:8888/librarydatabase/showorders.html">Show Orders</a><br>
+                <a href="http://localhost:8888/Bookstore/newcustomer.html">Add New Customer</a><br>
+                <a href="http://localhost:8888/Bookstore/showcustomers.php">Show Customers</a><br>
+                <a href="http://localhost:8888/Bookstore/showorders.php">Show Orders</a><br>
   
         </div>
-
-        
+           
 
        <form>
     </body>

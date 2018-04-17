@@ -10,7 +10,7 @@
 			$servername = "localhost";
 			$username = "root";
 			$password = "root";
-			$dbname = "Library";
+			$dbname = "Bookstore";
 
 			// Create connection
 			$conn = new mysqli($servername, $username, $password, $dbname);
@@ -34,7 +34,7 @@
 			}	
 
 			echo "<br>";
-			echo "<a href='http://localhost:8888/librarydatabase/'>Back</a>";
+			echo "<a href='http://localhost:8888/Bookstore/'>Back</a>";
 	 
 			$conn->close();
 		?>

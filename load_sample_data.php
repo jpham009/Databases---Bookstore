@@ -1,6 +1,6 @@
 <html>
 	<head>
-		<title>Database updated</title>
+		<title>Loading Sample Data</title>
 	</head>
 
 	<body>
@@ -12,10 +12,6 @@
 			$dbname = "Bookstore";
 			date_default_timezone_set('UTC');
 
-			 $customerid = $_POST['customerid'];
-			 $firstname  = $_POST['firstname'];
-			 $lastname = $_POST['lastname'];
-			 $email  = $_POST['email'];
 			
 			echo date('h:i:s:u a, l F jS Y e'); 
 
@@ -28,10 +24,18 @@
 			    die("Connection failed: " . $conn->connect_error);
 			} 
 
+			$result=mysql_query("SELECT count(*) as total from Students");
+			$data=mysql_fetch_assoc($result);
+			echo $data['total'];
 
-			// SQL statement
-			$sql = "INSERT INTO customer (Customer_ID,First_Name,Last_Name,Email)
-			VALUES ('" . $customerid . "', '" . $firstname . "','" . $lastname . "','" . $email . "')";
+
+			// LOAD SAMPLE DATA.... SQL statements
+			$sql = "INSERT INTO customer (Customer_ID,First_Name,Last_Name,Email)" VALUES ("Johnny", "Pham", "johnny.pham2@mavs.uta.edu"); 
+
+
+				"Eric Sauber", 
+				"Michael Fry", 
+			
 
 			echo "Record added<br>";
 

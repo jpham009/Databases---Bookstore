@@ -1,37 +1,32 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-       
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
         <title>PHP practice</title>
     </head>
     
     <body>
-        <form action="http://localhost:8888/librarydatabase/update.php" method="post">
+        <form action="http://localhost:8888/Bookstore/update.php" method="post">
         <h1 style="text-align:center">Add Customer</h1>
 
-        <div id="main">
+        <!-- Get length or last Customer_ID and +1 from there. Customer_ID should probably be generated in sequential order -->
+
+        
+        <fieldset style="text-align:center" id="info-frame">
+         <legend>Customer Information:</legend>
+            Customer_ID:<br><input type="text" name="customerid" size="30"/><br><br>
+            First Name:<br><input type="text" name="firstname" size="30"/><br><br>
+            Last Name:<br><input type="text" name="lastname" size="30"/><br><br>
+            Email:<br><input type="text" name="email" size="30"/><br><br>
             
-                <div class="text">Customer_ID</div>
-                <div><input type="text" name="customerid" size="30"/></div><br>
-
-                <div class="text">First Name</div>
-                <div><input type="text" name="firstname" size="30"/></div><br>
-
-                <div class="text">Last Name</div>
-                <div><input type="text" name="lastname" size="30"/></div><br>
-
-                <div class="text">Email</div>
-                <div><input type="text" name="email" size="30"/></div><br>
-        </div>
-            
-
-            <div id="two">
-                <input type="submit" value="Submit"/>
-                <br><br>
-            
+        <div id="submit_button">
+                    <input type="submit" value="Submit"/>
+                    <br><br>
             </div>
-        </div>
+        </fieldset>
+            
 
-       <form>
+       </form>
     </body>
 </html>
